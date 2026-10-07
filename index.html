@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeautyCare</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: linear-gradient(135deg, #fff1f5, #e5f2e9);
+            color: #5a4149;
+        }
+
+        .navbar, footer {
+            background: linear-gradient(90deg, #f8dce5, #dceee5) !important;
+        }
+
+        .navbar-brand, .title, .card h5 {
+            color: #a64d6a !important;
+        }
+
+        .nav-link {
+            color: #7d4b5b !important;
+        }
+
+        .nav-link:hover {
+            color: #6f927b !important;
+        }
+
+        .hero, .contact {
+            border-radius: 25px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero {
+            min-height: 350px;
+            background-image:
+                linear-gradient(135deg, #fce8eadd, #dceee5dd),
+                url("https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1400&q=80");
+        }
+
+        .contact {
+            min-height: 300px;
+            background-image:
+                linear-gradient(135deg, #fce8eadd, #dceee5dd),
+                url("https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1400&q=80");
+        }
+
+        .hero h1, .contact h2 {
+            color: #a64d6a;
+            font-weight: bold;
+        }
+
+        .card {
+            border: 0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .product-img {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .btn-pink {
+            background: #d98da7;
+            color: white;
+            border: 0;
+        }
+
+        .btn-pink:hover {
+            background: #7da08b;
+            color: white;
+        }
+
+        .sage {
+            color: #668873;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">BeautyCare</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container my-5" id="home">
+    <div class="hero p-5 text-center shadow-sm d-flex flex-column justify-content-center align-items-center">
+        <h1>Glow Naturally with BeautyCare</h1>
+        <p>Temukan produk skincare untuk kulit sehat, lembap, dan glowing.</p>
+        <a href="#products" class="btn btn-pink px-4">Explore Products</a>
+    </div>
+</section>
+
+<section class="container my-5" id="about">
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+            <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                <h2 class="title">About BeautyCare</h2>
+                <p>
+                    BeautyCare menyediakan berbagai produk skincare
+                    untuk membantu menjaga kulit tetap sehat dan terawat.
+                </p>
+                <p>
+                    Kami percaya bahwa perawatan kulit tidak harus rumit.
+                    Pilih produk yang sesuai dan gunakan secara rutin.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                <h2 class="title">Why Choose Us?</h2>
+                <ul>
+                    <li>Produk skincare berkualitas</li>
+                    <li>Pilihan untuk berbagai kebutuhan kulit</li>
+                    <li>Harga terjangkau</li>
+                    <li>Praktis digunakan sehari-hari</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container my-5" id="products">
+    <h2 class="title text-center mb-4">Our Skincare Products</h2>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://us.laneige.com/cdn/shop/files/BF_skincarestack.jpg?v=1753909882&width=672"
+                     class="product-img" alt="LANEIGE">
+                <div class="card-body text-center">
+                    <h5>LANEIGE Skincare</h5>
+                    <p>Rangkaian skincare untuk membantu menjaga kelembapan kulit.</p>
+                    <a href="#laneige" class="btn btn-pink">View Product</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://us.laneige.com/cdn/shop/files/1x1_07.jpg?v=1727451725&width=1600"
+                     class="product-img" alt="LANEIGE Water Bank">
+                <div class="card-body text-center">
+                    <h5>LANEIGE Water Bank</h5>
+                    <p>Perawatan hidrasi untuk membantu menjaga kulit tetap lembap.</p>
+                    <a href="#waterbank" class="btn btn-pink">View Product</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="https://static.tildacdn.com/tild3365-6466-4063-a331-306338623361/84c592b2c95029580e55.png"
+                     class="product-img" alt="SKIN1004">
+                <div class="card-body text-center">
+                    <h5>SKIN1004 Madagascar Centella</h5>
+                    <p>Skincare dengan Madagascar Centella sebagai bahan utama.</p>
+                    <a href="#skin1004" class="btn btn-pink">View Product</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container my-5">
+    <div class="row g-4">
+
+        <div class="col-12" id="laneige">
+            <div class="bg-white p-4 rounded-4 shadow-sm">
+                <h3 class="title">LANEIGE Skincare</h3>
+                <p>Produk skincare LANEIGE yang berfokus pada hidrasi dan kelembapan kulit.</p>
+            </div>
+        </div>
+
+        <div class="col-12" id="waterbank">
+            <div class="bg-white p-4 rounded-4 shadow-sm">
+                <h3 class="title">LANEIGE Water Bank</h3>
+                <p>Rangkaian skincare untuk membantu menjaga kulit tetap lembap dan terawat.</p>
+            </div>
+        </div>
+
+        <div class="col-12" id="skin1004">
+            <div class="bg-white p-4 rounded-4 shadow-sm">
+                <h3 class="title">SKIN1004 Madagascar Centella</h3>
+                <p>Rangkaian skincare dengan Centella Asiatica sebagai salah satu bahan utamanya.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container my-5" id="contact">
+    <div class="contact p-5 text-center shadow-sm d-flex flex-column justify-content-center align-items-center">
+        <h2>Contact Us</h2>
+        <p class="sage fw-bold">Let's take care of your skin together ♡</p>
+        <p>Email: beautycare@example.com</p>
+        <p>Instagram: @beautycare</p>
+        <a href="mailto:beautycare@example.com" class="btn btn-pink">
+            Send Email
+        </a>
+    </div>
+</section>
+
+<footer class="text-center py-4">
+    <b>BeautyCare</b>
+    <p class="mb-1">Your everyday skincare companion.</p>
+    <small>&copy; 2026 BeautyCare. All Rights Reserved.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
